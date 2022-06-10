@@ -1,0 +1,253 @@
+.section-1 {
+  margin-top: var(--header-height);
+}
+
+.section-1,
+.section-2 {
+  min-height: calc(100vh - var(--header-height));
+  background-image: url(../../assets/about/section-1.png);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 4.37em 1.87em;
+  display: grid;
+  grid-gap: 50px;
+  font-family: 'Cairo';
+}
+
+.journey-title,
+.outlet-title {
+  font-size: 7em;
+  text-transform: uppercase;
+  line-height: .9em;
+}
+
+.journey-text,
+.outlet-text {
+  font-size: 1.9em;
+  line-height: 1.37em;
+  text-align: right;
+}
+
+.section-2 {
+  min-height: 100vh;
+  background-image: url(../../assets/about/section-2.png);
+}
+
+.outlet-title {
+  text-align: right;
+}
+
+.outlet-text {
+  text-align: left;
+}
+
+.section-3 {
+  min-height: 100vh;
+  font-family: 'Cairo';
+  background: linear-gradient(113.15deg, rgba(0, 0, 0, 0.2) -2.68%, rgba(255, 3, 3, 0.2) 98.9%), rgba(59, 41, 44, 0.5);
+  color: white;
+  padding: 30px 0;
+}
+
+.team-title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: .8em;
+}
+
+.section-4 {
+  min-height: 100vh;
+  font-family: 'Cairo';
+  background: url(../../assets/about/section-4.png);
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  padding: 3.12em 4.37em;
+}
+
+.location-wrapper {
+  min-height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+
+.section-4 > :first-child {
+  margin-bottom: 50px;
+}
+
+.location-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../assets/about/map.png);
+  background-size: cover;
+  background-position: center center;
+  border: 8px solid #007042;
+}
+
+.location-img.outlet {
+  background-image: url(../../assets/about/outlet.png);
+}
+
+.location-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-text-title {
+  font-family: 'Cairo-bold';
+  font-size: 3.5em;
+  line-height: 1.3em;
+}
+
+.location-text-desc {
+  font-size: 1.8em;
+  line-height: 1.2em;
+  margin: 10px;
+}
+
+.instagram,
+.web {
+  font-size: 1.8em;
+  line-height: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.instagram img,
+.web img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.instagram a,
+.web a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Media Query  */
+
+/* min-width 992px */
+@media screen and (max-width: 1360px) {
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4 {
+    font-size: 14px;
+  }
+
+  .instagram,
+  .web {
+    line-height: 2.3em;
+  }
+}
+
+/* min-width 768px */
+@media screen and (max-width: 992px) {
+  .section-1,
+  .section-2,
+  .section-4 {
+    font-size: 12px;
+  }
+
+  .section-1,
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .journey-title,
+  .outlet-title,
+  .journey-text,
+  .outlet-text {
+    text-align: center;
+  }
+
+  .section-4 {
+    min-height: 0;
+  }
+
+  .location-wrapper {
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    grid-gap: 20px;
+  }
+
+  .location-img {
+    min-height: 20em;
+  }
+
+  .instagram,
+  .web {
+    line-height: 1.8em;
+  }
+
+  .instagram img,
+  .web img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* min-width  600px*/
+@media screen and (max-width: 768px)  {
+  .section-1,
+  .section-2,
+  .section-4 {
+    font-size: 10px;
+  }
+
+  .outlet-text br,
+  .journey-text br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4 {
+    font-size: 8px;
+  }
+
+  .location-wrapper {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4 {
+    font-size: 24px;
+  }
+}

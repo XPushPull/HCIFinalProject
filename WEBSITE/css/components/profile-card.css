@@ -1,0 +1,107 @@
+.team-profile-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.team-profile {
+  min-height: 50vh;
+  width: 80vw;
+  margin: 3vh;
+  display: grid;
+  grid-template-areas: "image content";
+  grid-template-columns: .7fr 1.25fr;
+}
+
+.team-profile.michael {
+  grid-template-areas: "content image";
+  grid-template-columns: 1.25fr .7fr;
+  text-align: right;
+}
+
+.profile-image-container {
+  grid-area: image;
+  padding: 0 12%;
+}
+
+.profile-info {
+  grid-area: content;
+}
+
+.profile-image.matthew {
+  background-image: url(../../assets/about/matthew_pp.png);
+}
+
+.profile-image.michael {
+  background-image: url(../../assets/about/michael_pp.png);
+}
+
+.profile-image {
+  height: 100%;
+  border-radius: 3%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.profile-name {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.profile-role,
+.profile-desc {
+  font-size: 1.3em;
+  font-family: 'Cairo-light';
+}
+
+.profile-role {
+  font-style: italic;
+}
+
+/* Media query */
+@media screen and (max-width: 992px) {
+  .team-profile,
+  .team-profile.michael {
+    min-height: 80vh;
+    grid-template-areas: "image"
+                         "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+    text-align: left;
+  }
+
+  .profile-info {
+    padding: 0 12%;
+  }
+
+  .profile-image {
+    min-height: 300px;
+  }
+
+  .profile-desc br {
+    display: none;
+  }
+
+  .team-profile-container {
+    gap: 30px;
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  .profile-info {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .profile-info {
+    font-size: 21px;
+  }
+}
+
+@media screen and (min-width: 1980px) {
+  .profile-info {
+    font-size: 23px;
+  }
+}

@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url(../assets/fonts/Cairo.ttf);
+}
+
+@font-face {
+  font-family: 'Cairo-light';
+  src: url(../assets/fonts/Cairo-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Cairo-bold';
+  src: url(../assets/fonts/Cairo-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Sarala';
+  src: url(../assets/fonts/Sarala-Regular.ttf);
+}
+
+
+@font-face {
+  font-family: 'Cabin';
+  src: url(../assets/fonts/Cabin-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Changa';
+  src: url(../assets/fonts/Changa-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'ZCOOL';
+  src: url(../assets/fonts/ZCOOLXiaoWei-Regular.ttf);
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    font-size: 14px;
+  }
+}

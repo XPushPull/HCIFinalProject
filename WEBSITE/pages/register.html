@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/components/header.css" />
+    <link rel="stylesheet" href="../css/components/footer.css" />
+    <link rel="stylesheet" href="../css/pages/register.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../assets/logo_small.png" alt="logo" />
+        <label>FARBUCKS</label>
+      </div>
+      <ul class="nav-list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="#" class="register active">Register</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+    <form class="register-form" id="RegistForm">
+      <div class="register-container">
+        <div class="register-title">REGISTER</div>
+        <div class="register-form-table">
+          <label class="register-form-input-label">Full Name</label>
+          <input
+            name="full-name"
+            type="text"
+            class="register-form-input"
+            required
+            tabindex="1"
+          />
+          <label class="register-form-input-label">Email</label>
+          <input
+            name="email"
+            type="email"
+            class="register-form-input"
+            required
+            tabindex="2"
+          />
+          <label class="register-form-input-label">Password</label>
+          <input
+            name="password"
+            type="password"
+            class="register-form-input"
+            required
+            tabindex="3"
+          />
+          <label class="register-form-input-label">Confirm Password</label>
+          <input
+            name="conf-password"
+            type="password"
+            class="register-form-input"
+            required
+            tabindex="4"
+          />
+          <label class="register-form-input-label">Address</label>
+          <input
+            name="address"
+            type="text"
+            class="register-form-input"
+            required
+            tabindex="5"
+          />
+        </div>
+        <div class="agreement-container">
+          <span class="checkbox-btn" id="privacy-terms"></span>
+          <label class="privacy-label">
+            I Agree to Terms & Privacy Policy (Required)
+          </label>
+        </div>
+        <div class="agreement-container">
+          <span id="send-newsletter" class="checkbox-btn"></span>
+          <label class="newsletter-label">
+            Send Newsletter to My Email<br />for upcoming events and promos
+            (Optional)
+          </label>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+    <footer>COPYRIGHT © 2021-2022 FARBUCKS - ALL RIGHTS RESERVED️</footer>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

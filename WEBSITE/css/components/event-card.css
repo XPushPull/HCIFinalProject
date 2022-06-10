@@ -1,0 +1,129 @@
+.events-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+}
+
+.event-card {
+  display: flex;
+  width: max-content;
+  gap: 50px;
+  padding: 20px;
+}
+
+.event-img {
+  width: 400px;
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.event-img.event-1 {
+  background-image: url(../../assets/events/event-1.png);
+}
+
+.event-img.event-2 {
+  background-image: url(../../assets/events/event-2.png);
+}
+
+.event-img.event-3 {
+  background-image: url(../../assets/events/event-3.png);
+}
+
+.event-detail {
+  font-family: 'Cairo';
+}
+
+.event-title {
+  color: rgba(0, 0, 0, .4);
+  font-size: 1.8em;
+  margin: 20px 0;
+}
+
+.event-title.event-2 {
+  text-align: right;
+}
+
+.event-desc {
+  font-size: 1.2em;
+}
+
+.learn-more-btn {
+  display: block;
+  width: max-content;
+  font-size: 1.3em;
+  padding: 2px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: white;
+  background-color: #8A1818;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 992px) {
+  .event-card {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .event-card.event-2 {
+    flex-direction: column-reverse;
+  }
+
+  .event-title.event-2 {
+    text-align: left;
+  }
+
+  .event-title {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .event-img {
+    width: 230px;
+    height: 230px;
+  }
+
+  .event-detail {
+    font-size: 9px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .event-img {
+    width: 425px;
+    height: 425px;
+  }
+
+  .event-detail {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .event-img {
+    width: 450px;
+    height: 450px;
+  }
+
+  .event-detail {
+    font-size: 20px;
+  }
+
+  .learn-more-btn {
+    border-radius: 6px;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .event-img {
+    width: 500px;
+    height: 500px;
+  }
+
+  .event-detail {
+    font-size: 22px;
+  }
+}

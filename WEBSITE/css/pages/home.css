@@ -1,0 +1,349 @@
+.section-1 {
+  background-image: url(../../assets/home/section_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height));
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  padding: 50px 100px;
+}
+
+/* Section 1 */
+.section-1 .text-1 {
+  display: flex;
+  align-items: center;
+  font-family: 'Sarala';
+  color: white;
+  font-size: 5.2rem;
+  line-height: 4.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.section-1 .logo-jumbo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1 .logo-jumbo-wrapper .logo-jumbo {
+  width: 24rem;
+  height: 24rem;
+}
+
+/* Section 2 */
+.section-2 {
+  background: url(../../assets/home/section_2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: .9fr 2fr;
+}
+
+.section-2 .text-2,
+.section-2 .text-3 {
+  color: white;
+  font-family: 'Sarala';
+  text-align: right;
+  padding: 0 2%;
+  letter-spacing: 0.01em;
+}
+
+.section-2 .text-2 {
+  font-size: 6rem;
+}
+
+.section-2 .text-3 {
+  font-size: 2.8rem;
+  line-height: 2.8rem;
+}
+
+.section-3 {
+  padding: 0 30px;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url(../../assets/home/section_3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+  color: white;
+  display: grid;
+  grid-template-areas: "promo-title promo-title"
+                       "promo-desc promo-product-img";
+  grid-template-rows: .5fr 2fr;
+  grid-template-columns: 1.1fr 1fr;
+}
+
+.section-3 .promo-title {
+  grid-area: promo-title;
+  font-family: 'Cairo';
+  font-size: 7rem;
+  line-height: 10.5rem;
+}
+
+.section-3 .promo-desc {
+  margin-bottom: 135px;
+  align-self: center;
+  grid-area: promo-desc;
+  font-family: 'Cairo';
+  font-size: 3.8rem;
+  line-height: 5rem;
+}
+
+.section-3 .promo-desc .green {
+  color: #007042;
+}
+
+.section-3 .product-img-wrapper {
+  grid-area: promo-product-img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-3 .product-img-wrapper .product-img {
+  width: 650px;
+  height: 450px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1280px) {
+  .section-1 .text-1 {
+    font-size: 4.2rem;
+    line-height: 3.82rem;
+  }
+
+  .section-1 .logo-jumbo-wrapper .logo-jumbo {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .section-2 .text-2 {
+    font-size: 5.6rem;
+  }
+
+  .section-2 .text-3 {
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+  }
+
+  .section-3 .promo-title {
+    font-size: 6rem;
+    line-height: 9.5rem;
+  }
+
+  .section-3 .promo-desc {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+
+  .section-3 .product-img-wrapper .product-img {
+    width: 615px;
+    height: 402px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .section-1 .text-1 {
+    font-size: 3.2rem;
+    line-height: 2.82rem;
+  }
+
+  .section-1 .logo-jumbo-wrapper .logo-jumbo {
+    width: 17rem;
+    height: 17rem;
+  }
+
+  .section-2 .text-2 {
+    font-size: 5rem;
+  }
+
+  .section-2 .text-3 {
+    font-size: 2.3rem;
+    line-height: 2.3rem;
+  }
+
+  .section-3 .promo-title {
+    font-size: 5rem;
+    line-height: 7.5rem;
+  }
+
+  .section-3 .promo-desc {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+  }
+
+  .section-3 .product-img-wrapper .product-img {
+    width: 518px;
+    height: 339px;
+  }
+
+}
+
+@media screen and (max-width: 820px) {
+  .section-1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5 1fr;
+    padding: 25px 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-1 .text-1 {
+    justify-self: center;
+    text-align: center;
+    line-height: 3.5rem;
+  }
+
+  .section-2 .text-2 {
+    align-self: center;
+  }
+
+  .section-2 .text-3 {
+    line-height: 4rem;
+  }
+
+  .section-2 .text-2,
+  .section-2 .text-3 {
+    text-align: center;
+  }
+
+  .section-3 {
+    grid-template-areas: "promo-title"
+                         "promo-product-img"
+                         "promo-desc";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1.2fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-3 .promo-desc {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .section-2 .text-2 {
+    font-size: 3.5rem;
+  }
+
+  .section-2 .text-3 {
+    font-size: 1.2rem;
+  }
+
+  .section-3 .promo-title {
+    font-size: 2.7rem;
+  }
+
+  .section-3 .promo-desc {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  .section-3 .product-img-wrapper .product-img {
+    width: 360px;
+    height: 235px;
+  }
+
+  .section-3 .product-img-wrapper .product-img {
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .section-1 .text-1 {
+    font-size: 2.5rem;
+    line-height: 2.8rem;
+  }
+
+  .section-2 .text-3 {
+    font-size: 1rem;
+  }
+
+  .section-3 .promo-title {
+    font-size: 2.5rem;
+  }
+
+  .section-3 .product-img-wrapper .product-img {
+    width: 340px;
+    height: 215px;
+  }
+
+}
+
+@media screen and (min-width: 1600px) {
+  .section-1 .text-1 {
+    font-size: 6.5rem;
+    line-height: 6.12rem;
+  }
+
+  .section-1 .logo-jumbo-wrapper .logo-jumbo {
+    width: 29rem;
+    height: 29rem;
+  }
+
+  .section-2 .text-2 {
+    font-size: 6.5rem;
+  }
+
+  .section-2 .text-3 {
+    font-size: 3.3rem;
+    line-height: 3.3rem;
+  }
+
+  .section-3 .promo-title {
+    font-size: 9rem;
+    line-height: 14rem;
+  }
+
+  .section-3 .promo-desc {
+    font-size: 4.4rem;
+    line-height: 5rem;
+  }
+
+  .section-3 .product-img-wrapper .product-img {
+    width: 780px;
+    height: 510px;
+  }
+}
+
+@media screen and (min-width: 1980px) {
+  .section-1 .text-1 {
+    font-size: 8.5rem;
+    line-height: 8.12rem;
+  }
+
+  .section-1 .logo-jumbo-wrapper .logo-jumbo {
+    width: 34rem;
+    height: 34rem;
+  }
+
+  .section-2 .text-2 {
+    font-size: 8.8rem;
+  }
+
+  .section-2 .text-3 {
+    font-size: 4.1rem;
+    line-height: 4.1rem;
+  }
+
+  .section-3 .promo-title {
+    font-size: 11rem;
+    line-height: 13rem;
+  }
+
+  .section-3 .promo-desc {
+    font-size: 5.9rem;
+    line-height: 7rem;
+  }
+
+  .section-3 .product-img-wrapper .product-img {
+    width: 900px;
+    height: 589px;
+  }
+}

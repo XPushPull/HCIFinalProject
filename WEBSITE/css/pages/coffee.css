@@ -1,0 +1,46 @@
+.menu {
+  padding: 0 30px;
+  margin: 50px 0;
+}
+
+.menu.recommended {
+  margin-top: calc(var(--header-height) + 50px);
+}
+
+.menu-title {
+  font-family: 'Cairo';
+  font-size: 2rem;
+  padding: 0 10px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 920px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu-title {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .menu-title {
+    font-size: 1.2rem;
+  }
+}
